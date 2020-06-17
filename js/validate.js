@@ -108,7 +108,7 @@ function submitFun(){
         document.getElementById("five").style.color="red";
         dist.style.border= "1px dotted red";
         return false;
-    }else if((fema.checked==false)||(mal.checked==false)||(trans.checked==false)){
+    }else if((fema.checked==false)&&(mal.checked==false)&&(trans.checked==false)){
     fema.focus();
     document.getElementById("rad").innerHTML="*Please enter your gender";
     document.getElementById("rad").style.color="red";
@@ -262,7 +262,7 @@ function valid(){
     }if(dat.value.trim()!=""){
         document.getElementById("da").innerHTML=" ";
         dat.style.border= "1px solid #ebebeb"; 
-    }if((fema.checked==false)||(mal.checked==false)||(trans.checked==false)){
+    }if((fema.checked==false)&&(mal.checked==false)&&(trans.checked==false)){
         document.getElementById("rad").innerHTML=" ";
         fema.style.border= "1px solid #ebebeb"; 
         mal.style.border= "1px solid #ebebeb"; 
